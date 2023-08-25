@@ -68,6 +68,7 @@ a {
 .page-header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid var(--color-cornflower);
 }
 .page-header-container {
   display: flex;
@@ -75,14 +76,18 @@ a {
 }
 .menu {
   display: flex;
+  align-items: center;
 }
 .nav-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
+}
+.nav-link {
+  padding: 24px 0;
 }
 .address-list {
   display: flex;
-  column-gap: 40px;
+  gap: 40px;
 }
 .logo-part-one {
   display: inline-block;
@@ -157,6 +162,9 @@ a {
   letter-spacing: 0.04em;
   cursor: pointer;
   margin: 0 auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   padding: 16px 32px;
   border-radius: 4px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -166,13 +174,16 @@ a {
   background-color: var(--color-ocean);
 }
 /* Goals section */
+.goals-section {
+  padding: 120px 0;
+}
 .goals-container {
   padding-left: 15px;
   padding-right: 15px;
 }
 .goals-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -185,6 +196,7 @@ a {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .goals-list-text {
   color: var(--color-slate);
@@ -193,10 +205,11 @@ a {
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
-/* Team section */
+/* Members section */
 .team-section {
   background-color: var(--color-cloud);
   height: 732px;
+  padding: 120px 0;
 }
 .team-title {
   color: var(--color-navy-blue);
@@ -206,12 +219,11 @@ a {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
-  column-gap: 24px;
+  gap: 24px;
   text-align: center;
 }
 .team-list-item {
@@ -223,19 +235,23 @@ a {
     0px 1px 1px 0px rgba(46, 47, 66, 0.16),
     0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
+.team-info-container {
+  padding: 32px 0;
+}
 .team-list-title {
   color: var(--color-navy-blue-modal);
   font-size: 20px;
   font-weight: 500;
   line-height: 1.2;
+  text-align: center;
   letter-spacing: 0.02em;
-  padding-top: 32px;
   margin-bottom: 8px;
 }
 .team-list-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
+  text-align: center;
   letter-spacing: 0.02em;
   padding-bottom: 32px;
 }
